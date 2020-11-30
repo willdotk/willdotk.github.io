@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Willdotk - Portfolio of Will Kang</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
+    /> -->
+    <link rel="stylesheet" href="css/bulma.css" />
+    <link rel="stylesheet" href="css/wkstyle.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">    
+        <a
+        id="navBurger"
+        role="button"
+        class="navbar-burger burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbarMenuToggle"
+        style="background-color: transparent;"
+        onclick="navMenuToggle()"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+      </div>
+    
+      <div id="navbarMenuToggle" class="navbar-menu animate__animated animate__fadeInDown">    
+        <div class="navbar-end">
+          <a class="navbar-item" href='/#about'>About</a>
+          <a class="navbar-item" href='/#codingprojects'>Projects</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="mainlanding">
+      <div id="particles-js" class="" data-aos="fade" data-aos-duration="3000"></div>
+      <div class="square">
+        <div class="squaretext" data-aos="fade" data-aos-duration="2000">
+          <div class="architecture">Architecture & Construction</div>
+          <div class="bim">BIM</div>
+          <div class="coding">Coding</div>
+          <div class="web">Web development</div>
+          <img class="dotklogo" src="images/willdotk_logo.svg" alt="logo" />
+        </div>
+        <img class="watermarklogo" src="images/watermark.png" alt="watermark" />
+      </div>
+    </section>
+
+
+
+    <section id="about" class="wk-container">
+      <div class="tile is-ancestor">
+        <div class="tile is-parent is-3" data-aos="fade-right" data-aos-duration="1500">
+          <article class="tile is-child background-grey">
+            <div class="name subtitle">
+              <p class="firstname">WILL</p>
+              <p class="lastname">KANG</p>
+            </div>
+            <div class="jobtitles">
+              <p class="jobtitle">Architectural Technician</p>
+              <p class="jobtitle">Revit User</p>
+              <p class="jobtitle">Coding Enthusiast</p>
+            </div>
+          </article>
+        </div>
+        <div class="tile is-parent" data-aos="fade-left" data-aos-duration="2500">
+          <article class="tile is-child">
+            <div class="profile">
+              <p class="spacing-1">
+                I’m an architectural technician and have been working on various
+                projects that range from residential to large commercial buildings
+                in New Zealand.
+              </p>
+              <p class="spacing-1">
+                BIM and Revit in the architecture and construction industry are
+                my passions. I have introduced this workflow to my workplace and
+                have been providing training for other staff. Rules and systems
+                had to be set up from the very beginning as part of this
+                implementation. This includes Revit template and contents
+                building which requires a lot of decision making for the new
+                software platform to be integrated with existing workplace
+                standards and I managed to assemble them all from previous
+                experience.
+              </p>
+              <p class="spacing-1">
+                I also have a passion for coding and have been teaching myself
+                for several years. I found this skill so useful and always seek
+                a way that this can benefit the workflow and efficiency of the
+                architecture and construction industry.
+              </p>
+              <br />
+            </div>
+            <div class="interest">
+              <p class="spacing-1">
+                # Architectural technology &nbsp; # Building construction
+              </p>
+              <p class="spacing-1">
+                # Revit &nbsp; # Revit Add-In &nbsp; # BIM
+              </p>
+              <p class="spacing-1"># C sharp &nbsp; # Python</p>
+              <p class="spacing-1"># Web development</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="codingprojects" class="wk-container">
+      <div class="wk-inner-container">
+      <div class="section-title" data-aos="fade-right" data-aos-duration="1500">CODING PROJECTS</div>
+      <div class="project-grid">
+        <div id="rht" class="card" 
+        data-aos="fade-up" 
+        data-aos-duration="1000"
+        onclick="activeModal(event)">
+          <header class="card-header">
+            <p class="card-header-title">Revit Handy Tools</p>
+          </header>
+          <div class="card-image">
+            <figure class="image is-5by4">
+              <img src="../images/rht.jpg" alt="RHT Revit extension development" />
+            </figure>
+          </div>
+        </div>
+        <div id="rhtModal" class="modal animate__animated animate__zoomIn">
+          <div class="modal-background" onclick="deactiveModal(event)"></div>
+          <div class="modal-content">
+            <div class="modal-container has-text-centered desktop">
+              <h2 class="subtitle">Revit Handy Tools</h2>
+              <p>Revit Handy Tools(RHT) is my personal Revit extension development project. 
+                This Revit add-in consists of useful features to reduce hassle tasks while using Revit daily basis.</p>
+              <br>
+              <a href="https://github.com/willdotk/RevitHandyTools" target="_blank">
+                <span class="icon is-large">
+                  <i class="fab fa-github fa-2x"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="astudio" class="card"
+        data-aos="fade-up" 
+        data-aos-duration="1000"
+        onclick="activeModal(event)">
+          <header class="card-header">
+            <p class="card-header-title">Architecture Studio Website</p>
+          </header>
+          <div class="card-image">
+            <figure class="image is-5by4">
+              <img src="../images/astudio.png" alt="architecture studio website fullstack project" />
+            </figure>
+          </div>
+        </div>
+        <div id="astudioModal" class="modal animate__animated animate__zoomIn">
+          <div class="modal-background" onclick="deactiveModal(event)"></div>
+          <div class="modal-content">
+            <div class="modal-container has-text-centered desktop">
+              <h2 class="subtitle">Architecture Studio Website</h2>
+              <p>Full Stack web development using Django as backend technology and basic frontend - HTML, CSS, Javascript</p>
+              <br>
+                <a href="https://astudio.co.nz/" target="_blank">
+                <span class="icon is-large">
+                  <i class="fas fa-external-link-alt fa-2x"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="matchup" class="card"
+        data-aos="fade-up" 
+        data-aos-duration="1000" 
+        onclick="activeModal(event)">
+          <header class="card-header">
+            <p class="card-header-title">Let's Matchup</p>
+          </header>
+          <div class="card-image">
+            <figure class="image is-5by4">
+              <img src="../images/matchup.jpg" alt="Team matching up app development for single match or tournament" />
+            </figure>
+          </div>
+        </div>
+        <div id="matchupModal" class="modal animate__animated animate__zoomIn">
+          <div class="modal-background" onclick="deactiveModal(event)"></div>
+          <div class="modal-content">
+            <div class="modal-container has-text-centered desktop">
+              <h2 class="subtitle">Let's Matchup</h2>
+              <p>Team matching web application developed for a badminton club I’m in. This application can be used for any type of doubles sports.</p>
+              <br>
+              <a href="https://github.com/willdotk/lets-matchup" target="_blank">
+                <span class="icon is-large">
+                  <i class="fab fa-github fa-2x"></i>
+                </span>
+              </a>
+                <a href="https://www.letsmatchup.club/" target="_blank">
+                <span class="icon is-large">
+                  <i class="fas fa-external-link-alt fa-2x"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <footer id="contact" class="wk-container">
+      <hr>
+      <div class="level">
+        <div class="level-left">
+          <div class="level-item">
+            <a href="https://github.com/willdotk" target="_blank">
+              <span class="icon is-large">
+                <i class="fab fa-github fa-2x"></i>
+              </span>
+            </a>
+            <a href="https://linkedin.com/in/willdotk" target="_blank">
+              <span class="icon is-large">
+                <i class="fab fa-linkedin fa-2x"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="level-right">
+          <div class="level-item">
+            <ul>
+              <li class="has-text-right">© 2020 willdotk all rights reserved</li>
+              <li class="has-text-right"><a href="mailto:willdotk@gmail.com">willdotk@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      particlesJS.load('particles-js', 'js/particlesjs.json', () => {
+        if (window.innerWidth <= 768) {
+        pJSDom[0].pJS.particles.number.value = 20;
+        pJSDom[0].pJS.particles.number.density.value_area = 600;
+        pJSDom[0].pJS.fn.particlesRefresh();
+        }
+      });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
