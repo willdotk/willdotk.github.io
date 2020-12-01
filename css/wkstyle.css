@@ -281,6 +281,10 @@ a {
   font-weight: 600;
 }
 
+.card {
+  cursor: pointer;
+}
+
 .card:hover .card-header-title {
   color: #5f5b53;
   font-weight: bold;
